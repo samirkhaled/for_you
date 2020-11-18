@@ -26,9 +26,9 @@
             android:id="@+id/row_names"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="bottom"
             android:layout_gravity="center"
-            android:gravity="center"
+            android:layout_marginStart="13dp"
             android:textColor="#000"
             android:textSize="20sp"/>
-
          </androidx.cardview.widget.CardView>
