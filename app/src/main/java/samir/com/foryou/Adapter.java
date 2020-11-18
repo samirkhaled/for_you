@@ -29,6 +29,7 @@
      }
      @Override
      public void onBindViewHolder(ViewHolders holder, final int position) {
+         //Toast.makeText(context,String.valueOf(position), Toast.LENGTH_SHORT).show();
          // وضع الاسم فى مكان الاسماء
          holder.TextName.setText(namesArray[position]);
          holder.photo.setImageResource(photo_array[position]);
@@ -47,7 +48,7 @@
 
      @Override
      public int getItemCount() {
-         return namesArray.length;
+         return photo_array.length;
 
      }
      public class ViewHolders extends RecyclerView.ViewHolder {

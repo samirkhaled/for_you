@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerview=(RecyclerView)findViewById(R.id.recycler);
         Adapter adapter=new Adapter(MainActivity.this,names,photos);
         recyclerview.setLayoutManager(new GridLayoutManager(this,3));
+        adapter.notifyDataSetChanged();
         recyclerview.setAdapter(adapter);
 
     }
